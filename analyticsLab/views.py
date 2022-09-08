@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def analyticsLab(request):
     return render(request, "analyticsLab/index.html")
+
+def searchDatabase(request):
+    return render(request, "analyticsLab/searchDatabase.html")
