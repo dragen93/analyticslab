@@ -13,12 +13,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon.png' %}">
     <title>SCD Infolab</title>
     <!-- Custom CSS -->
-    <link href="{% static 'styles/mystyles.scss' %}" rel="stylesheet">
     <link href="{% static 'assets/extra-libs/c3/c3.min.css' %}" rel="stylesheet">
     <link href="{% static 'assets/libs/chartist/dist/chartist.min.css' %}" rel="stylesheet">
     <link href="{% static 'assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css' %}" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="{% static 'dist/css/style.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/mystyles.scss' %}" type="text/x-scss" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -277,7 +277,7 @@
                         <li class="nav-small-cap"><span class="hide-menu">Applications</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
-                                class="hide-menu">By Tech Team </span></a>
+                                class="hide-menu">Data Analytics</span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
                                 <li class="sidebar-item"> 
                                     <a class="sidebar-link" href="{% url 'searchDatabase' %}" aria-expanded="false">
@@ -290,7 +290,7 @@
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
-                                class="hide-menu">By IRC </span></a>
+                            class="hide-menu">Image Forensics </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
                                 <li class="sidebar-item"> 
                                     <a class="sidebar-link" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/" target="_blank" aria-expanded="false">
@@ -338,7 +338,7 @@
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
-                                class="hide-menu"> External </span></a>
+                            class="hide-menu"> Search Engine </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
                                 <li class="sidebar-item"> 
                                     <a class="sidebar-link" href="https://www.twitonomy.com/" target="_blank" aria-expanded="false">
@@ -396,6 +396,32 @@
                                         </span>
                                     </a>
                                 </li>     
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                            aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                                class="hide-menu">Trackback Tools</span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"> 
+                                    <a class="sidebar-link" href="{% url 'searchDatabase' %}" aria-expanded="false">
+                                        <span class="hide-menu">
+                                            Search Database
+                                        </span>
+                                    </a>
+                                </li>   
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                            aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                                class="hide-menu">Network Plotting</span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"> 
+                                    <a class="sidebar-link" href="{% url 'searchDatabase' %}" aria-expanded="false">
+                                        <span class="hide-menu">
+                                            Search Database
+                                        </span>
+                                    </a>
+                                </li>   
                             </ul>
                         </li>
                         <!-- <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html"
@@ -724,9 +750,9 @@
                 <!-- Start Applications Section -->
                 <!-- *************************************************************** -->
                 <div class="card-deck my-2">
-                    <a class="card mr-2" target="_blank" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/">
-                        <span class="align-middle" >
-                            <img class="card-img-top p-3"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
+                    <a class="card mx-2" target="_blank" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/">
+                        <span class="mx-auto d-block" >
+                            <img class="card-img-top " style="height:100px;width:200px"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
                         </span> 
                         <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Twitter Timeline Analyzer</h5> -->
@@ -734,8 +760,8 @@
                         <!-- </div> -->
                     </a>
                     <a class="card mx-2" target="_blank" href="http://124.109.52.235:8083">
-                        <span class="align-middle" >
-                            <img class="card-img-top p-3"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
+                        <span class="mx-auto d-block" >
+                            <img class="card-img-top " style="height:100px;width:200px"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
                         </span> 
                         <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Hashtag Scrapper</h5> -->
@@ -743,8 +769,8 @@
                         <!-- </div> -->
                     </a>
                     <!-- <a class="card mx-2" target="_blank" href="http://124.109.52.235:8085">
-                        <span class="align-middle" >
-                            <img class="card-img-top p-3"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
+                        <span class="center" >
+                            <img class="card-img-top " style="height:100px;width:auto"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
                         </span>  -->
                         <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Hashtag report</h4> -->
@@ -752,27 +778,27 @@
                         <!-- </div> -->
                     <!-- </a> -->
                     <!-- <a class="card mx-2" target="_blank" href="http://124.109.52.235:8083/">
-                        <span class="align-middle" >
-                            <img class="card-img-top p-3"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
+                        <span class="center" >
+                            <img class="card-img-top " style="height:100px;width:auto"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
                         </span>  -->
                         <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Crawler 1.0</h5> -->
                             <!-- <p class="card-text text-dark"></p> -->
                         <!-- </div> -->
                     <!-- </a> -->
-                    <a class="card ml-2" target="_blank" href="http://124.109.52.235:8081/">
-                        <span class="align-middle" >
-                            <img class="card-img-top p-3"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
+                    <a class="card mx-2" target="_blank" href="http://124.109.52.235:8081/">
+                        <span class="mx-auto d-block" >
+                            <img class="card-img-top " style="height:100px;width:200px"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
                         </span> 
                         <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Crawler 2.0</h5> -->
                             <!-- <p class="card-text text-dark"></p> -->
                         <!-- </div> -->
                     </a>
-                    <a class="card mr-2" target="_blank" href="http://124.109.52.235:5601/">
+                    <a class="card mx-2" target="_blank" href="http://124.109.52.235:5601/">
                         <div class="card-body py-3">
-                        <span class="align-middle" >
-                            <img class="card-img-top"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
+                        <span class="mx-auto d-block" >
+                            <img class="card-img-top " style="height:100px;width:200px"  src="{% static 'assets/images/applications/elasticsearch.png' %}" alt="IRC image">
                         </span> 
                             <!-- <h5 class="card-title">Elastic Dashboards</h5> -->
                             <!-- <p class="card-text text-dark"></p> -->
@@ -782,8 +808,8 @@
                 <div class="card-deck my-2">
                     <a class="card mx-2" target="_blank" href="https://www.twitonomy.com/">
                         <div class="card-body py-3">
-                        <span class="align-middle" >
-                            <img class="card-img-top"  src="{% static 'assets/images/applications/twitonomy.png' %}" alt="twitonomy image">
+                        <span class="mx-auto d-block" >
+                            <img class="card-img-top " style="height:100px;width:200px"  src="{% static 'assets/images/applications/twitonomy.png' %}" alt="twitonomy image">
                         </span> 
                             <!-- <h5 class="card-title">Twitonomy</h5> -->
                             <!-- <p class="card-text text-dark">Get Twitter #analytics on any user, #insights on your mentions & RTs, download tweets, manage your lists and more... </p> -->
@@ -791,8 +817,8 @@
                     </a>
                     <a class="card mx-2" target="_blank" href="https://followerwonk.com/">
                         <div class="card-body py-3">
-                        <span class="align-middle" >
-                            <img class="card-img-top"  src="{% static 'assets/images/applications/followerwonk.png' %}" alt="followerwonk image">
+                        <span class="mx-auto d-block" >
+                            <img class="card-img-top " style="height:100px;width:200px"  src="{% static 'assets/images/applications/followerwonk.png' %}" alt="followerwonk image">
                         </span> 
                             <!-- <h5 class="card-title">Followerwonk</h5> -->
                             <!-- <p class="card-text text-dark">Search Bios, Compare users, Analyze, Track and Sort followers </p> -->
@@ -800,17 +826,17 @@
                     </a>
                     <a class="card mx-2" target="_blank" href="https://epieos.com">
                         <div class="card-body py-3">
-                        <span class="align-middle" >
-                            <img class="card-img-top"  src="{% static 'assets/images/applications/epieos.png' %}" alt="Epieos  image">
+                        <span class="mx-auto d-block" >
+                            <img class="card-img-top " style="height:100px;width:200px"  src="{% static 'assets/images/applications/epieos.png' %}" alt="Epieos  image">
                         </span> 
                             <!-- <h5 class="card-title">Epieos</h5> -->
                             <!-- <p class="card-text text-dark">Retrieve information linked to an email address, leaving no traces. </p> -->
                         </div>
                     </a>
-                    <a class="card ml-2" target="_blank" href="https://hoaxy.osome.iu.edu/">
+                    <a class="card mx-2" target="_blank" href="https://hoaxy.osome.iu.edu/">
                         <div class="card-body py-3">
-                        <span class="align-middle" >
-                            <img class="card-img-top"  src="{% static 'assets/images/applications/hoaxyosome.png' %}" alt="Hoaxy.osome image">
+                        <span class="mx-auto d-block" >
+                            <img class="card-img-top " style="height:100px;width:200px"  src="{% static 'assets/images/applications/hoaxyosome.png' %}" alt="Hoaxy.osome image">
                         </span> 
                             <!-- <h5 class="card-title">Hoaxy.osome</h4> -->
                             <!-- <p class="card-text text-dark">Visualize the spread of information on Twitter.</p> -->
@@ -820,10 +846,10 @@
 
                 <div class="card-deck my-2">        
                     
-                    <a class="card mr-2" target="_blank" href="https://www.linkedin.com/">
+                    <a class="card mx-2" target="_blank" href="https://www.linkedin.com/">
                         <div class="card-body py-3">
-                        <span class="align-middle" >
-                            <img class="card-img-top"  src="{% static 'assets/images/applications/linkedin.png' %}" alt="Linkedin image">
+                        <span class="mx-auto d-block" >
+                            <img class="card-img-top " style="height:100px;width:200px"  src="{% static 'assets/images/applications/linkedin.png' %}" alt="Linkedin image">
                         </span> 
                             <!-- <h5 class="card-title">Linkedin</h5> -->
                             <!-- <p class="card-text text-dark">Connect the world's professionals network with more than 830 million members in more than 200 countries and territories to make them more productive and successful.</p> -->
@@ -831,8 +857,8 @@
                     </a>
                     <a class="card mx-2" target="_blank" href="https://spoonbill.io/">
                         <div class="card-body py-3">
-                        <span class="align-middle" >
-                            <img class="card-img-top"  src="{% static 'assets/images/applications/spoonbill.png' %}" alt="Spoonbill image">
+                        <span class="mx-auto d-block" >
+                            <img class="card-img-top " style="height:100px;width:200px"  src="{% static 'assets/images/applications/spoonbill.png' %}" alt="Spoonbill image">
                         </span> 
                             <!-- <h5 class="card-title">Spoonbill</h4> -->
                             <!-- <p class="card-text text-dark">Keep updated on your friends' and family members' bios, websites, locations, and names. </p> -->
@@ -840,8 +866,8 @@
                     </a>
                     <a class="card mx-2" target="_blank" href="https://archive.org/web/">
                         <div class="card-body py-3">
-                        <span class="align-middle" >
-                            <img class="card-img-top"  src="{% static 'assets/images/applications/waybackmachine.png' %}" alt="waybackmachine image">
+                        <span class="mx-auto d-block" >
+                            <img class="card-img-top " style="height:100px;width:200px"  src="{% static 'assets/images/applications/waybackmachine.png' %}" alt="waybackmachine image">
                         </span> 
                             <!-- <h5 class="card-title">waybackmachine</h5> -->
                             <!-- <p class="card-text text-dark">Internet Archive is a non-profit library of millions of free books, movies, software, music, websites, and more. </p> -->
@@ -849,8 +875,8 @@
                     </a>
                     <a class="card mx-2" target="_blank" href="https://thevisualized.com/">
                         <div class="card-body py-3">
-                        <span class="align-middle" >
-                            <img class="card-img-top"  src="{% static 'assets/images/applications/thevisualized.png' %}" alt="thevisualized image">
+                        <span class="mx-auto d-block" >
+                            <img class="card-img-top " style="height:100px;width:200px"  src="{% static 'assets/images/applications/thevisualized.png' %}" alt="thevisualized image">
                         </span> 
                             <!-- <h5 class="card-title">thevisualized</h5> -->
                             <!-- <p class="card-text text-dark">Social Media Analytics, Worldwide Trends, Social Media Search, Visualize Twitter Profile </p> -->
