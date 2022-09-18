@@ -18,7 +18,7 @@
     <link href="{% static 'assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css' %}" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="{% static 'dist/css/style.min.css' %}" rel="stylesheet">
-    <link href="{% static 'styles/mystyles.scss' %}" type="text/x-scss" rel="stylesheet">
+    <link href="{% static 'styles/mystyles.css' %}" type="text/css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -280,9 +280,51 @@
                                 class="hide-menu">Data Analytics</span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
                                 <li class="sidebar-item"> 
+                                    <a class="sidebar-link" href="https://www.twitonomy.com/" target="_blank" aria-expanded="false">
+                                        <span class="hide-menu">
+                                            Twitonomy
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item"> 
+                                    <a class="sidebar-link" href="https://followerwonk.com/" target="_blank" aria-expanded="false">
+                                        <span class="hide-menu">
+                                            Followerwonk
+                                        </span>
+                                    </a>
+                                </li>  
+                                <li class="sidebar-item"> 
+                                    <a class="sidebar-link" href="https://hoaxy.osome.iu.edu/" target="_blank" aria-expanded="false">
+                                        <span class="hide-menu">
+                                            Hoaxy.osome
+                                        </span>
+                                    </a>
+                                </li>  
+                                <li class="sidebar-item"> 
+                                    <a class="sidebar-link" href="https://spoonbill.io/" target="_blank"  aria-expanded="false">
+                                        <span class="hide-menu">
+                                            Spoonbill
+                                        </span>
+                                    </a>
+                                </li> 
+                                <li class="sidebar-item"> 
+                                    <a class="sidebar-link" href="https://thevisualized.com/" target="_blank" aria-expanded="false">
+                                        <span class="hide-menu">
+                                            thevisualized
+                                        </span>
+                                    </a>
+                                </li>  
+                                <li class="sidebar-item"> 
+                                    <a class="sidebar-link" href="https://blockedaccounts.herokuapp.com/" target="_blank" aria-expanded="false">
+                                        <span class="hide-menu">
+                                            Blocked Accounts
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item"> 
                                     <a class="sidebar-link" href="{% url 'searchDatabase' %}" aria-expanded="false">
                                         <span class="hide-menu">
-                                            Search Database
+                                            Elasticsearch Dashboard
                                         </span>
                                     </a>
                                 </li>   
@@ -340,20 +382,8 @@
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
                             class="hide-menu"> Search Engine </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"> 
-                                    <a class="sidebar-link" href="https://www.twitonomy.com/" target="_blank" aria-expanded="false">
-                                        <span class="hide-menu">
-                                            Twitonomy
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item"> 
-                                    <a class="sidebar-link" href="https://followerwonk.com/" target="_blank" aria-expanded="false">
-                                        <span class="hide-menu">
-                                            Followerwonk
-                                        </span>
-                                    </a>
-                                </li>  
+                                
+                                
                                 <li class="sidebar-item"> 
                                     <a class="sidebar-link" href="https://epieos.com" target="_blank" aria-expanded="false">
                                         <span class="hide-menu">
@@ -361,13 +391,7 @@
                                         </span>
                                     </a>
                                 </li>  
-                                <li class="sidebar-item"> 
-                                    <a class="sidebar-link" href="https://hoaxy.osome.iu.edu/" target="_blank" aria-expanded="false">
-                                        <span class="hide-menu">
-                                            Hoaxy.osome
-                                        </span>
-                                    </a>
-                                </li>  
+                                
                                 <li class="sidebar-item"> 
                                     <a class="sidebar-link" href="https://www.linkedin.com/" target="_blank"  aria-expanded="false">
                                         <span class="hide-menu">
@@ -375,13 +399,7 @@
                                         </span>
                                     </a>
                                 </li>  
-                                <li class="sidebar-item"> 
-                                    <a class="sidebar-link" href="https://spoonbill.io/" target="_blank"  aria-expanded="false">
-                                        <span class="hide-menu">
-                                            Spoonbill
-                                        </span>
-                                    </a>
-                                </li>  
+                                 
                                 <li class="sidebar-item"> 
                                     <a class="sidebar-link" href="https://archive.org/web/" target="_blank" aria-expanded="false">
                                         <span class="hide-menu">
@@ -389,13 +407,7 @@
                                         </span>
                                     </a>
                                 </li>  
-                                <li class="sidebar-item"> 
-                                    <a class="sidebar-link" href="https://thevisualized.com/" target="_blank" aria-expanded="false">
-                                        <span class="hide-menu">
-                                            thevisualized
-                                        </span>
-                                    </a>
-                                </li>     
+                                   
                             </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
@@ -750,8 +762,18 @@
                 <!-- Start Applications Section -->
                 <!-- *************************************************************** -->
                 <div class="card-deck my-2">
-                    <a class="card mx-2" target="_blank" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/">
-                            <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"   src="{% static 'assets/images/applications/TTA.png' %}" alt="IRC image">
+                    <a class="card flip-card mx-2" target="_blank" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"   src="{% static 'assets/images/applications/TTA.png' %}" alt="IRC image">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>John Doe</h1>
+                                <p>Architect & Engineer</p>
+                            <p>We love that guy</p>
+                            </div>
+                        </div>
+
                         <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Twitter Timeline Analyzer</h5> -->
                             <!-- <p class="card-text text-dark"></p> -->

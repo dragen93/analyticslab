@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'home.apps.HomeConfig',
-    'analyticsLab.apps.AnalyticslabConfig'
+    'analyticsLab.apps.AnalyticslabConfig',
+    'authentication.apps.AuthenticationConfig'
 ]
 
 MIDDLEWARE = [
@@ -125,6 +126,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'home/static',
     BASE_DIR / 'analyticsLab/static',
+    BASE_DIR / 'authentication/static',
 ]
 
 # Default primary key field type
