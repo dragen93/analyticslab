@@ -65,13 +65,14 @@
                             </b>
                             <!--End Logo icon -->
                             <!-- Logo text -->
-                            <span class="logo-text text-dark font-weight-bold">
-                                SCD Infolab
+                            <div class="logo-text text-dark font-weight-bold">
+                                Social Media Mining 
+                                & OSINT Lab
                                 <!-- dark Logo text -->
                                 <!-- <img src="{% static 'assets/images/logo-text.png' %}" alt="homepage" class="dark-logo" /> -->
                                 <!-- Light Logo text -->
                                 <!-- <img src="{% static 'assets/images/logo-light-text.png' %}" class="light-logo" alt="homepage" /> -->
-                            </span>
+                            </div>
                         </a>
                     </div>
                     <!-- ============================================================== -->
@@ -93,6 +94,11 @@
                     <!-- toggle and nav items -->
                     <!-- ============================================================== -->
                     <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
+                        <li class=" nav-item text-dark font-weight-bold" >
+                            <h2>
+                                
+                            </h2>
+                        </li>
                         <!-- Notification -->
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle pl-md-3 position-relative" href="javascript:void(0)"
@@ -229,7 +235,7 @@
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
-                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
+                                <!-- <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
                                         class="svg-icon mr-2 ml-1"></i>
                                     My Profile</a>
                                 <a class="dropdown-item" href="javascript:void(0)"><i data-feather="credit-card"
@@ -242,13 +248,13 @@
                                 <a class="dropdown-item" href="javascript:void(0)"><i data-feather="settings"
                                         class="svg-icon mr-2 ml-1"></i>
                                     Account Setting</a>
-                                <div class="dropdown-divider"></div>
+                                <div class="dropdown-divider"></div> -->
                                 <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
                                         class="svg-icon mr-2 ml-1"></i>
                                     Logout</a>
-                                <div class="dropdown-divider"></div>
+                                <!-- <div class="dropdown-divider"></div>
                                 <div class="pl-4 p-3"><a href="javascript:void(0)" class="btn btn-sm btn-info">View
-                                        Profile</a></div>
+                                        Profile</a></div> -->
                             </div>
                         </li>
                         <!-- ============================================================== -->
@@ -274,11 +280,18 @@
                                 aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
                                     class="hide-menu">Dashboard</span></a></li>
                         <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Applications</span></li>
+                        <li class="nav-small-cap"><span class="hide-menu">OSINT Tools</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
                                 class="hide-menu">Data Analytics</span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"> 
+                                    <a class="sidebar-link" href="https://blockedaccounts.herokuapp.com/" target="_blank" aria-expanded="false">
+                                        <span class="hide-menu">
+                                            Blocked Accounts
+                                        </span>
+                                    </a>
+                                </li>
                                 <li class="sidebar-item"> 
                                     <a class="sidebar-link" href="https://www.twitonomy.com/" target="_blank" aria-expanded="false">
                                         <span class="hide-menu">
@@ -314,13 +327,6 @@
                                         </span>
                                     </a>
                                 </li>  
-                                <li class="sidebar-item"> 
-                                    <a class="sidebar-link" href="https://blockedaccounts.herokuapp.com/" target="_blank" aria-expanded="false">
-                                        <span class="hide-menu">
-                                            Blocked Accounts
-                                        </span>
-                                    </a>
-                                </li>
                                 <li class="sidebar-item"> 
                                     <a class="sidebar-link" href="{% url 'searchDatabase' %}" aria-expanded="false">
                                         <span class="hide-menu">
@@ -659,7 +665,7 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
-                        <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Applications</h3>
+                        <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">OSINT TOOLS</h3>
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
@@ -762,25 +768,25 @@
                 <!-- Start Applications Section -->
                 <!-- *************************************************************** -->
                 <div class="card-deck my-2">
-                    <a class="card flip-card mx-2" target="_blank" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/">
+                    <!-- <a class="card flip-card mx-2" target="_blank" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"   src="{% static 'assets/images/applications/TTA.png' %}" alt="IRC image">
+                                <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/TTA.png' %}" alt="IRC image">
                             </div>
-                            <div class="flip-card-back">
-                                <h1>John Doe</h1>
-                                <p>Architect & Engineer</p>
-                            <p>We love that guy</p>
+                            <div class="flip-card-back ">
+                                <h4>Twiter Timeline Analyzer</h4>
+                                <h6>Architect & Engineer. We love that guy</h6>
                             </div>
-                        </div>
-
+                        </div> -->
+                    <a class="card mx-2" target="_blank" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/">
+                                    <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/TTA.png' %}" alt="IRC image">
                         <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Twitter Timeline Analyzer</h5> -->
                             <!-- <p class="card-text text-dark"></p> -->
                         <!-- </div> -->
                     </a>
                     <a class="card mx-2" target="_blank" href="http://124.109.52.235:8083">
-                            <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"   src="{% static 'assets/images/applications/telegramparser.png' %}" alt="IRC image">
+                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/telegramparser.png' %}" alt="IRC image">
                         <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Hashtag Scrapper</h5> -->
                             <!-- <p class="card-text text-dark"></p> -->
@@ -806,7 +812,7 @@
                     <!-- </a> -->
                     <a class="card mx-2" target="_blank" href="http://124.109.52.235:8081/">
                         <div class="card-body py-3 pt-3">
-                            <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
+                            <img class="card-img-top d-block m-auto"   src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
                             <!-- <h5 class="card-title">Crawler 2.0</h5> -->
                             <!-- <p class="card-text text-dark"></p> -->
                         </div>
@@ -822,28 +828,28 @@
                 <div class="card-deck my-2">
                     <a class="card mx-2" target="_blank" href="https://www.twitonomy.com/">
                         <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"   src="{% static 'assets/images/applications/twitonomy.png' %}" alt="twitonomy image">
+                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/twitonomy.png' %}" alt="twitonomy image">
                             <!-- <h5 class="card-title">Twitonomy</h5> -->
                             <!-- <p class="card-text text-dark">Get Twitter #analytics on any user, #insights on your mentions & RTs, download tweets, manage your lists and more... </p> -->
                         </div>
                     </a>
                     <a class="card mx-2" target="_blank" href="https://followerwonk.com/">
                         <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"  src="{% static 'assets/images/applications/followerwonk.png' %}" alt="followerwonk image">
+                            <img class="card-img-top d-block m-auto"   src="{% static 'assets/images/applications/followerwonk.png' %}" alt="followerwonk image">
                             <!-- <h5 class="card-title">Followerwonk</h5> -->
                             <!-- <p class="card-text text-dark">Search Bios, Compare users, Analyze, Track and Sort followers </p> -->
                         </div>
                     </a>
                     <a class="card mx-2" target="_blank" href="https://epieos.com">
                         <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"   src="{% static 'assets/images/applications/epieos.png' %}" alt="Epieos  image">
+                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/epieos.png' %}" alt="Epieos  image">
                             <!-- <h5 class="card-title">Epieos</h5> -->
                             <!-- <p class="card-text text-dark">Retrieve information linked to an email address, leaving no traces. </p> -->
                         </div>
                     </a>
                     <a class="card mx-2" target="_blank" href="https://hoaxy.osome.iu.edu/">
                         <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"   src="{% static 'assets/images/applications/hoaxyosome.png' %}" alt="Hoaxy.osome image">
+                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/hoaxyosome.png' %}" alt="Hoaxy.osome image">
                             <!-- <h5 class="card-title">Hoaxy.osome</h4> -->
                             <!-- <p class="card-text text-dark">Visualize the spread of information on Twitter.</p> -->
                         </div>
@@ -854,28 +860,28 @@
                     
                     <a class="card mx-2" target="_blank" href="https://www.linkedin.com/">
                         <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"   src="{% static 'assets/images/applications/linkedin.png' %}" alt="Linkedin image">
+                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/linkedin.png' %}" alt="Linkedin image">
                             <!-- <h5 class="card-title">Linkedin</h5> -->
                             <!-- <p class="card-text text-dark">Connect the world's professionals network with more than 830 million members in more than 200 countries and territories to make them more productive and successful.</p> -->
                         </div>
                     </a>
                     <a class="card mx-2" target="_blank" href="https://spoonbill.io/">
                         <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"   src="{% static 'assets/images/applications/spoonbill.png' %}" alt="Spoonbill image">
+                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/spoonbill.png' %}" alt="Spoonbill image">
                             <!-- <h5 class="card-title">Spoonbill</h4> -->
                             <!-- <p class="card-text text-dark">Keep updated on your friends' and family members' bios, websites, locations, and names. </p> -->
                         </div>
                     </a>
                     <a class="card mx-2" target="_blank" href="https://archive.org/web/">
                         <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"   src="{% static 'assets/images/applications/waybackmachine.png' %}" alt="waybackmachine image">
+                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/waybackmachine.png' %}" alt="waybackmachine image">
                             <!-- <h5 class="card-title">waybackmachine</h5> -->
                             <!-- <p class="card-text text-dark">Internet Archive is a non-profit library of millions of free books, movies, software, music, websites, and more. </p> -->
                         </div>
                     </a>
                     <a class="card mx-2" target="_blank" href="https://thevisualized.com/">
                         <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto" style="height: 100px;width: 200px;"   src="{% static 'assets/images/applications/thevisualized.png' %}" alt="thevisualized image">
+                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/thevisualized.png' %}" alt="thevisualized image">
                             <!-- <h5 class="card-title">thevisualized</h5> -->
                             <!-- <p class="card-text text-dark">Social Media Analytics, Worldwide Trends, Social Media Search, Visualize Twitter Profile </p> -->
                         </div>
