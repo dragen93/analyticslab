@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon.png' %}">
-    <title>SCD Infolab</title>
+    <title>SMM & OSINTLAB</title>
     <!-- Custom CSS -->
     <link href="{% static 'assets/extra-libs/c3/c3.min.css' %}" rel="stylesheet">
     <link href="{% static 'assets/libs/chartist/dist/chartist.min.css' %}" rel="stylesheet">
@@ -54,7 +54,7 @@
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <div class="navbar-brand">
+                    <div class="navbar-brand px-3">
                         <!-- Logo icon -->
                         <a href="{% url 'analyticslab' %}">
                             <b class="logo-icon">
@@ -65,14 +65,13 @@
                             </b>
                             <!--End Logo icon -->
                             <!-- Logo text -->
-                            <div class="logo-text text-dark font-weight-bold">
-                                Social Media Mining 
-                                & OSINT Lab
+                            <span class="logo-text text-dark font-weight-bold">
+                                    SMM & OSINT LAB
                                 <!-- dark Logo text -->
                                 <!-- <img src="{% static 'assets/images/logo-text.png' %}" alt="homepage" class="dark-logo" /> -->
                                 <!-- Light Logo text -->
                                 <!-- <img src="{% static 'assets/images/logo-light-text.png' %}" class="light-logo" alt="homepage" /> -->
-                            </div>
+                            </span>
                         </a>
                     </div>
                     <!-- ============================================================== -->
@@ -768,33 +767,41 @@
                 <!-- Start Applications Section -->
                 <!-- *************************************************************** -->
                 <div class="card-deck my-2">
-                    <!-- <a class="card flip-card mx-2" target="_blank" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/TTA.png' %}" alt="IRC image">
+                                <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/TTA.png' %}" alt="IRC image">
                             </div>
-                            <div class="flip-card-back ">
-                                <h4>Twiter Timeline Analyzer</h4>
-                                <h6>Architect & Engineer. We love that guy</h6>
+                            <div class="flip-card-back p-3 ">
+                                <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                <h6>Analyze, illusterates Twitter Data</h6>
                             </div>
-                        </div> -->
-                    <a class="card mx-2" target="_blank" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/">
-                                    <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/TTA.png' %}" alt="IRC image">
+                        </div>
+                    <!-- <a class="card mx-2" target="_blank" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/TTA.png' %}" alt="IRC image"> -->
                         <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Twitter Timeline Analyzer</h5> -->
                             <!-- <p class="card-text text-dark"></p> -->
                         <!-- </div> -->
                     </a>
-                    <a class="card mx-2" target="_blank" href="http://124.109.52.235:8083">
-                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/telegramparser.png' %}" alt="IRC image">
-                        <!-- <div class="card-body py-3 pt-3"> -->
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="http://124.109.52.235:8083">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/telegramparser.png' %}" alt="IRC image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                            <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Hashtag Scrapper</h5> -->
                             <!-- <p class="card-text text-dark"></p> -->
                         <!-- </div> -->
                     </a>
                     <!-- <a class="card mx-2" target="_blank" href="http://124.109.52.235:8085">
                         <span class="center" >
-                            <img class="card-img-top " style="height:100px;width:auto"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
+                            <img class="card-img-top h-10 " style="height:100px;width:auto"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
                         </span>  -->
                         <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Hashtag report</h4> -->
@@ -803,91 +810,233 @@
                     <!-- </a> -->
                     <!-- <a class="card mx-2" target="_blank" href="http://124.109.52.235:8083/">
                         <span class="center" >
-                            <img class="card-img-top " style="height:100px;width:auto"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
+                            <img class="card-img-top h-10 " style="height:100px;width:auto"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
                         </span>  -->
                         <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Crawler 1.0</h5> -->
                             <!-- <p class="card-text text-dark"></p> -->
                         <!-- </div> -->
                     <!-- </a> -->
-                    <a class="card mx-2" target="_blank" href="http://124.109.52.235:8081/">
-                        <div class="card-body py-3 pt-3">
-                            <img class="card-img-top d-block m-auto"   src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="http://124.109.52.235:8081/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"   src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                        <!-- <div class="card-body py-3 pt-3"> -->
                             <!-- <h5 class="card-title">Crawler 2.0</h5> -->
                             <!-- <p class="card-text text-dark"></p> -->
-                        </div>
+                        <!-- </div> -->
                     </a>
-                    <a class="card mx-2" target="_blank" href="http://124.109.52.235:5601/">
-                        <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto" style="height: 100px;width: 100px;" src="{% static 'assets/images/applications/elasticsearch.png' %}" alt="IRC image">
+                    <a class="card  flip-card mx-2" target="_blank" href="http://124.109.52.235:5601/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"  src="{% static 'assets/images/applications/elasticsearch.png' %}" alt="IRC image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                        <!-- <div class="card-body py-3"> -->
                             <!-- <h5 class="card-title">Elastic Dashboards</h5> -->
                             <!-- <p class="card-text text-dark"></p> -->
-                        </div>
+                        <!-- </div> -->
                     </a>
                 </div>
                 <div class="card-deck my-2">
-                    <a class="card mx-2" target="_blank" href="https://www.twitonomy.com/">
-                        <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/twitonomy.png' %}" alt="twitonomy image">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://www.twitonomy.com/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/twitonomy.png' %}" alt="twitonomy image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                        <!-- <div class="card-body py-3"> -->
                             <!-- <h5 class="card-title">Twitonomy</h5> -->
                             <!-- <p class="card-text text-dark">Get Twitter #analytics on any user, #insights on your mentions & RTs, download tweets, manage your lists and more... </p> -->
-                        </div>
+                        <!-- </div> -->
                     </a>
-                    <a class="card mx-2" target="_blank" href="https://followerwonk.com/">
-                        <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto"   src="{% static 'assets/images/applications/followerwonk.png' %}" alt="followerwonk image">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://followerwonk.com/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"   src="{% static 'assets/images/applications/followerwonk.png' %}" alt="followerwonk image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                        <!-- <div class="card-body py-3"> -->
                             <!-- <h5 class="card-title">Followerwonk</h5> -->
                             <!-- <p class="card-text text-dark">Search Bios, Compare users, Analyze, Track and Sort followers </p> -->
-                        </div>
+                        <!-- </div> -->
                     </a>
-                    <a class="card mx-2" target="_blank" href="https://epieos.com">
-                        <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/epieos.png' %}" alt="Epieos  image">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://epieos.com">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/epieos.png' %}" alt="Epieos  image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                        <!-- <div class="card-body py-3"> -->
                             <!-- <h5 class="card-title">Epieos</h5> -->
                             <!-- <p class="card-text text-dark">Retrieve information linked to an email address, leaving no traces. </p> -->
-                        </div>
+                        <!-- </div> -->
                     </a>
-                    <a class="card mx-2" target="_blank" href="https://hoaxy.osome.iu.edu/">
-                        <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/hoaxyosome.png' %}" alt="Hoaxy.osome image">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://hoaxy.osome.iu.edu/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/hoaxyosome.png' %}" alt="Hoaxy.osome image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                        <!-- <div class="card-body py-3"> -->
                             <!-- <h5 class="card-title">Hoaxy.osome</h4> -->
                             <!-- <p class="card-text text-dark">Visualize the spread of information on Twitter.</p> -->
-                        </div>
+                        <!-- </div> -->
                     </a>
                 </div>
 
                 <div class="card-deck my-2">        
                     
-                    <a class="card mx-2" target="_blank" href="https://www.linkedin.com/">
-                        <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/linkedin.png' %}" alt="Linkedin image">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://www.linkedin.com/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/linkedin.png' %}" alt="Linkedin image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                        <!-- <div class="card-body py-3"> -->
                             <!-- <h5 class="card-title">Linkedin</h5> -->
                             <!-- <p class="card-text text-dark">Connect the world's professionals network with more than 830 million members in more than 200 countries and territories to make them more productive and successful.</p> -->
-                        </div>
+                        <!-- </div> -->
                     </a>
-                    <a class="card mx-2" target="_blank" href="https://spoonbill.io/">
-                        <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/spoonbill.png' %}" alt="Spoonbill image">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://spoonbill.io/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/spoonbill.png' %}" alt="Spoonbill image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                        <!-- <div class="card-body py-3"> -->
                             <!-- <h5 class="card-title">Spoonbill</h4> -->
                             <!-- <p class="card-text text-dark">Keep updated on your friends' and family members' bios, websites, locations, and names. </p> -->
-                        </div>
+                        <!-- </div> -->
                     </a>
-                    <a class="card mx-2" target="_blank" href="https://archive.org/web/">
-                        <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/waybackmachine.png' %}" alt="waybackmachine image">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://archive.org/web/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/waybackmachine.png' %}" alt="waybackmachine image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                        <!-- <div class="card-body py-3"> -->
                             <!-- <h5 class="card-title">waybackmachine</h5> -->
                             <!-- <p class="card-text text-dark">Internet Archive is a non-profit library of millions of free books, movies, software, music, websites, and more. </p> -->
-                        </div>
+                        <!-- </div> -->
                     </a>
-                    <a class="card mx-2" target="_blank" href="https://thevisualized.com/">
-                        <div class="card-body py-3">
-                            <img class="card-img-top d-block m-auto"    src="{% static 'assets/images/applications/thevisualized.png' %}" alt="thevisualized image">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://thevisualized.com/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/thevisualized.png' %}" alt="thevisualized image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                        <!-- <div class="card-body py-3"> -->
                             <!-- <h5 class="card-title">thevisualized</h5> -->
                             <!-- <p class="card-text text-dark">Social Media Analytics, Worldwide Trends, Social Media Search, Visualize Twitter Profile </p> -->
-                        </div>
+                        <!-- </div> -->
                     </a>
                 </div>
-
+                <div class="card-deck my-2">        
+                    
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://www.linkedin.com/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/linkedin.png' %}" alt="Linkedin image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                        <!-- <div class="card-body py-3"> -->
+                            <!-- <h5 class="card-title">Linkedin</h5> -->
+                            <!-- <p class="card-text text-dark">Connect the world's professionals network with more than 830 million members in more than 200 countries and territories to make them more productive and successful.</p> -->
+                        <!-- </div> -->
+                    </a>
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://spoonbill.io/">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/spoonbill.png' %}" alt="Spoonbill image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div>
+                        <!-- <div class="card-body py-3"> -->
+                            <!-- <h5 class="card-title">Spoonbill</h4> -->
+                            <!-- <p class="card-text text-dark">Keep updated on your friends' and family members' bios, websites, locations, and names. </p> -->
+                        <!-- </div> -->
+                    </a>
+                    <div class="card flip-card h-10 mx-2" target="_blank" href="https://archive.org/web/">
+                        <!-- <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/waybackmachine.png' %}" alt="waybackmachine image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div> -->
+                        <!-- <div class="card-body py-3"> -->
+                            <!-- <h5 class="card-title">waybackmachine</h5> -->
+                            <!-- <p class="card-text text-dark">Internet Archive is a non-profit library of millions of free books, movies, software, music, websites, and more. </p> -->
+                        <!-- </div> -->
+                    </div>
+                    <div class="card flip-card h-10 mx-2" target="_blank" href="https://thevisualized.com/">
+                        <!-- <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/thevisualized.png' %}" alt="thevisualized image">
+                                </div>
+                                <div class="flip-card-back p-3 ">
+                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
+                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                </div>
+                            </div> -->
+                        <!-- <div class="card-body py-3"> -->
+                            <!-- <h5 class="card-title">thevisualized</h5> -->
+                            <!-- <p class="card-text text-dark">Social Media Analytics, Worldwide Trends, Social Media Search, Visualize Twitter Profile </p> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
                 
                 <!-- *************************************************************** -->
                 <!-- End Applications Section -->
