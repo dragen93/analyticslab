@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-rg&t7rk(9*o%7z)bz0w==1(%l3p!-c$@q^90w4=k96@(m=-tjo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.105','smmandosint.cloud68.org']
 
 
 # Application definition
@@ -82,21 +82,21 @@ WSGI_APPLICATION = 'infoLab.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {  
-        'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'test',  
-        'USER': 'root',  
-        'PASSWORD': '',  
-        'HOST': '127.0.0.1',  
-        'PORT': '3306',  
-        'OPTIONS': {  
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
-        }  
-    }      
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
+    # 'default': {  
+    #     'ENGINE': 'django.db.backends.mysql',  
+    #     'NAME': 'test',  
+    #     'USER': 'root',  
+    #     'PASSWORD': '',  
+    #     'HOST': '127.0.0.1',  
+    #     'PORT': '3306',  
+    #     'OPTIONS': {  
+    #         'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+    #     }  
+    # }      
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 ELASTICSEARCH_DSL = {
