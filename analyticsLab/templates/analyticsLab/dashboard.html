@@ -230,7 +230,7 @@
                                 <img src="{% static 'assets/images/users/profile-pic.jpg' %}" alt="user" class="rounded-circle"
                                     width="40">
                                 <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span
-                                        class="text-dark">Jason Doe</span> <i data-feather="chevron-down"
+                                        class="text-dark">Admin</span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
@@ -248,7 +248,7 @@
                                         class="svg-icon mr-2 ml-1"></i>
                                     Account Setting</a>
                                 <div class="dropdown-divider"></div> -->
-                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
+                                <a class="dropdown-item" href="{% url 'signout' %}"><i data-feather="power"
                                         class="svg-icon mr-2 ml-1"></i>
                                     Logout</a>
                                 <!-- <div class="dropdown-divider"></div>
@@ -744,8 +744,8 @@
                                     <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/TTA.png' %}" alt="IRC image">
                                 </div>
                                 <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
-                                    <h6 class="bt-0">Analyze, illusterates Twitter Data</h6>
+                                    <h3 class="font-weight-bold">Twitter Timeline Analyzer</h3>
+                                    <h6 class="bt-0">Analyze, illusterates Twitter Data.</h6>
                                 </div>
                             </div>
                             <!-- <div class="card-body py-3 pt-3"> -->
@@ -759,8 +759,8 @@
                                     <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/TelegramParser.png' %}" alt="IRC image">
                                 </div>
                                 <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
-                                    <h6 class="bt-0">Analyze, illusterates Twitter Data</h6>
+                                    <h3 class="font-weight-bold">Telegram Parser</h3>
+                                    <h6 class="bt-0">Scrap and analyze twitter tik tok and hashtag based data.</h6>
                                 </div>
                             </div>
                             <!-- <div class="card-body py-3 pt-3"> -->
@@ -792,8 +792,8 @@
                                     <img class="card-img-top h-10 d-block m-auto"  src="{% static 'assets/images/applications/elasticsearch.png' %}" alt="IRC image">
                                 </div>
                                 <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
-                                    <h6 class="bt-0">Analyze, illusterates Twitter Data</h6>
+                                    <h3 class="font-weight-bold">Elastic Database</h3>
+                                    <h6 class="bt-0">Scrap and save twitter, tiktok and telegram data.</h6>
                                 </div>
                             </div>
                         <!-- <div class="card-body py-3"> -->
@@ -808,7 +808,7 @@
                                 </div>
                                 <div class="flip-card-back p-3 ">
                                     <h3 class="font-weight-bold">Kumu.io</h3>
-                                    <h6 class="bt-0">Analyze, illusterates Twitter Data</h6>
+                                    <h6 class="bt-0">kumu makes it easy to organise complex data into relationship maps.</h6>
                                 </div>
                             </div>
                         <!-- <div class="card-body py-3 pt-3"> -->
@@ -840,7 +840,7 @@
                                 </div>
                                 <div class="flip-card-back p-3 ">
                                     <h3 class="font-weight-bold">Followerwonk</h3>
-                                    <h6 class="bt-0">Search Bios, Compare users, Analyze, Track and Sort followers</h6>
+                                    <h6 class="bt-0">Search Bios, Compare users, Analyze, Track and Sort followers.</h6>
                                 </div>
                             </div>
                         <!-- <div class="card-body py-3"> -->
@@ -855,7 +855,7 @@
                                 </div>
                                 <div class="flip-card-back p-3 ">
                                     <h3 class="font-weight-bold">Epieos </h3>
-                                    <h6 class="bt-0">Retrieve information linked to an email address, leaving no traces</h6>
+                                    <h6 class="bt-0">Retrieve information linked to an email address, leaving no traces.</h6>
                                 </div>
                             </div>
                         <!-- <div class="card-body py-3"> -->
@@ -870,7 +870,7 @@
                                 </div>
                                 <div class="flip-card-back p-3 ">
                                     <h3 class="font-weight-bold">Hoaxy.osome</h3>
-                                    <h6 class="bt-0">Visualize the spread of information on Twitter</h6>
+                                    <h6 class="bt-0">Visualize the spread of information on Twitter.</h6>
                                 </div>
                             </div>
                         <!-- <div class="card-body py-3"> -->
@@ -889,7 +889,7 @@
                                 </div>
                                 <div class="flip-card-back p-3 ">
                                     <h3 class="font-weight-bold">Linkedin </h3>
-                                    <h6 class="bt-0">Connect the world's professionals network with people to make them more productive and successful. </h6>
+                                    <h6 class="bt-0">Connect the world's professionals network to make them more productive and successful. </h6>
                                 </div>
                             </div>
                         <!-- <div class="card-body py-3"> -->
@@ -937,7 +937,7 @@
                                 </div>
                                 <div class="flip-card-back p-3 ">
                                     <h3 class="font-weight-bold">thevisualized</h3>
-                                    <h6 class="bt-0">Social Media Analytics, Worldwide Trends, Social Media Search, Visualize Twitter Profile 
+                                    <h6 class="bt-0">Social Media Analytics, Worldwide Trends, Social Media Search, Visualize Twitter Profile.
                                     </h6>
                                 </div>
                             </div>
@@ -949,10 +949,10 @@
                 </div>
                 <div class="card-deck my-2">        
                     
-                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://www.linkedin.com/">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://fotoforensics.com/">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/linkedin.png' %}" alt="Linkedin image">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/FotoForensics.png' %}" alt="Linkedin image">
                                 </div>
                                 <div class="flip-card-back p-3 ">
                                     <h3 class="font-weight-bold">FotoForensics</h3>
@@ -964,21 +964,21 @@
                             <!-- <p class="card-text text-dark">Connect the world's professionals network with more than 830 million members in more than 200 countries and territories to make them more productive and successful.</p> -->
                         <!-- </div> -->
                     </a>
-                    <div class="card flip-card h-10 mx-2" target="_blank" href="https://spoonbill.io/">
-                        <!-- <div class="flip-card-inner">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://blockedaccounts.herokuapp.com/">
+                        <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/spoonbill.png' %}" alt="Spoonbill image">
+                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/twitterAccount.png' %}" alt="Spoonbill image">
                                 </div>
                                 <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
-                                    <h6>Analyze, illusterates Twitter Data</h6>
+                                    <h3 class="font-weight-bold">Blocked Account Checker</h3>
+                                    <h6>Checks twitter account status and displays in a tabular and csv form. </h6>
                                 </div>
-                            </div> -->
+                            </div>
                         <!-- <div class="card-body py-3"> -->
                             <!-- <h5 class="card-title">Spoonbill</h4> -->
                             <!-- <p class="card-text text-dark">Keep updated on your friends' and family members' bios, websites, locations, and names. </p> -->
                         <!-- </div> -->
-                    </div>
+                    </a>
                     <div class="card flip-card h-10 mx-2" target="_blank" href="https://archive.org/web/">
                         <!-- <div class="flip-card-inner">
                             <div class="flip-card-front">

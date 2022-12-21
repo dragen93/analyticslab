@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
+from elasticsearch import RequestsHttpConnection
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -37,10 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    
     'home.apps.HomeConfig',
     'analyticsLab.apps.AnalyticslabConfig',
-    'authentication.apps.AuthenticationConfig'
+    'authentication',
 ]
 
 MIDDLEWARE = [
@@ -80,9 +82,30 @@ WSGI_APPLICATION = 'infoLab.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
+    'default': {  
+        'ENGINE': 'django.db.backends.mysql',  
+        'NAME': 'test',  
+        'USER': 'root',  
+        'PASSWORD': '',  
+        'HOST': '127.0.0.1',  
+        'PORT': '3306',  
+        'OPTIONS': {  
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+        }  
+    }      
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
+}
+
+ELASTICSEARCH_DSL = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'hosts': 'localhost:9200',
+        'use_ssl': True,
+        'http_auth': ('elastic', 's2_XsTqifb1GXOkLlZpb'),
+        'ca_certs': '/path/to/cert.crt',
+        'connection_class': RequestsHttpConnection
     }
 }
 
@@ -133,3 +156,8 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 25
+}
