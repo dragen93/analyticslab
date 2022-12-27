@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>SCD Infolab</title>
+  <title>SMM & OSINT Lab</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -43,7 +43,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="{% url 'home' %}">SCD InfoLab</a></h1>
+      <h1 class="logo me-auto"><a href="{% url 'home' %}">SMM & OSINT Lab</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src=""{% static 'img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -72,7 +72,6 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
-          <!-- <li><a class="getstarted scrollto" href="{% url 'analyticslab' %}">Get Insights</a></li> -->
           <li><a class="getstarted scrollto" href="{% url 'signin' %}">Get Insights</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -89,8 +88,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>SCD Infolab v0.1</h1>
-          <h2>Your gateway to the latest happenings, and insights in the social media space.</h2>
+          <h1>Welcome to Social Media Mining & OSINT Lab</h1>
+          <!-- <h2 class="mb-0">Your gateway to the latest happenings and insights in the social media space.</h2> -->
+          <h2 >Our portal contains an amalgamation of various tools and technologies that are purposefully built to monitor, analyze, and offer insights regarding different social media platforms.</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="{% url 'signin' %}" class="btn-get-started scrollto">Get Insights</a>
             <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
@@ -148,23 +148,24 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About Us</h2>
+          <h2>About SMM & OSINT Lab</h2>
         </div>
 
         <div class="row content">
           <div class="col-lg-6">
             <p>
-              SCD Infolab, a proprietary software of stratcom div, is the brainchild of the in-
-              house team of developers who are dedicated to developing the most cutting-edge
-              software and tools to monitor the social media landscape of the country.
+              SMM (Social Media Mosaic) is a proprietary software of our institution.
+              It is the brainchild of the in-house team of developers who are dedicated
+              to developing the most cutting-edge software and tools to monitor the 
+              social media landscape of the country.
             </p>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              The dashboard provides its users with a holistic view social media platforms like
-              Twitter. Salient features include:
+              The dashboard provides its users with a holistic view of social media platforms. Salient features include:
             </p>
             <ul>
+              <li><i class="ri-check-double-line"></i> Access to state-of-the-art OSINT tools. </li>
               <li><i class="ri-check-double-line"></i> Dashboard of top trending hashtags and keywords.</li>
               <li><i class="ri-check-double-line"></i> Monitoring of twitter user accounts.</li>
               <li><i class="ri-check-double-line"></i> Stats related to target hashtags and user accounts.</li>
@@ -299,33 +300,33 @@
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Tweets Analyzed</a></h4>
-              <h4>1235</h4>
+              <div class="icon"><i class=""><img class="card-img-top h-10 d-block m-auto" style="width:50%" src="{% static 'img/smoceye.jpg' %}" alt="SMOCEYE"></i></div>
+              <h4><a href="http://192.168.0.105:8003" target="_blank">SMOCEYE</a></h4>
+              <h4></h4>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Accounts Monitored</a></h4>
-              <h4>1235</h4>
+              <div class="icon"><i class=""><img class="card-img-top h-10 d-block m-auto" style="width:50%" src="{% static 'img/osintwiki.png' %}" alt="OSINT WIKI"></i></div>
+              <h4><a href="">OSINT Wiki</a></h4>
+              <h4></h4>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Hashtags Tracked</a></h4>
-              <h4>1235</h4>
+              <div class="icon"><i class=""><img class="card-img-top h-10 d-block m-auto" style="width:50%" src="{% static 'img/twitonomy.gif' %}" alt="twitonomy"></i></div>
+              <h4><a href="https://www.twitonomy.com/">Twitonomy</a></h4>
+              <h4></h4>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4><a href="">Blocking Operations</a></h4>
-              <h4>1235</h4>
+              <div class="icon"><i class=""><img class="card-img-top h-10 d-block m-auto" style="width:50%" src="{% static 'img/hoaxy.png' %}" alt="HOAXY"></i></div>
+              <h4><a href="https://hoaxy.osome.iu.edu/">Hoaxy</a></h4>
+              <h4></h4>
             </div>
           </div>
 

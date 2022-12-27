@@ -19,12 +19,14 @@
               <div class="top"></div>
               <div class="bottom"></div>
               <div class="center">
+
               <h2>Login</h2>{{ msg }}
               <form method="post">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <button type="submit" class="btn btn-primary" class="login-btn">Login</button>
               </form>
+
 
               <h2>&nbsp;</h2>
               </div>
