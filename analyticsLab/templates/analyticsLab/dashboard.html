@@ -269,7 +269,7 @@
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-        <aside class="left-sidebar" data-sidebarbg="skin6">
+        <aside class="left-sidebar hidden" data-sidebarbg="skin6">
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar" data-sidebarbg="skin6">
                 <!-- Sidebar navigation-->
@@ -279,8 +279,8 @@
                                 aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
                                     class="hide-menu">Dashboard</span></a></li>
                         <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">OSINT Tools</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                        <!-- <li class="nav-small-cap"><span class="hide-menu">OSINT Tools</span></li> -->
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
                                 class="hide-menu">Data Analytics</span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
@@ -342,9 +342,9 @@
                                     </a>
                                 </li>  
                                   
-                            </ul>
-                        </li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                            </ul> -->
+                        <!-- </li> -->
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
                             class="hide-menu">Image Forensics </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
@@ -357,8 +357,8 @@
                                     </a>
                                 </li>   
                             </ul>
-                        </li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                        </li> -->
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
                             class="hide-menu"> Search Engine </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
@@ -371,8 +371,8 @@
                                 </li>  
                                    
                             </ul>
-                        </li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                        </li> -->
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
                                 class="hide-menu">Trackback Tools</span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
@@ -391,8 +391,8 @@
                                     </a>
                                 </li>   
                             </ul>
-                        </li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                        </li> -->
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
                                 class="hide-menu">Network Plotting</span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
@@ -411,7 +411,7 @@
                                     </a>
                                 </li>     
                             </ul>
-                        </li>
+                        </li> -->
                         <!-- <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html"
                         aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
                         class="hide-menu">Ticket List
@@ -738,86 +738,36 @@
                 <!-- Start Applications Section -->
                 <!-- *************************************************************** -->
                 <div class="card-deck my-2">
-                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://eyz5lx-chris-corner.shinyapps.io/Timeline_Analyzer/">
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="http://192.168.0.105:8003">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/TTA.png' %}" alt="IRC image">
+                                    <img class="card-img-top h-10 d-block m-auto" style="width:65%" src="{% static 'assets/images/applications/smoceye.jpg' %}" alt="SMOCEYE image">
                                 </div>
                                 <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Twitter Timeline Analyzer</h3>
-                                    <h6 class="bt-0">Analyze, illusterates Twitter Data.</h6>
-                                </div>
-                            </div>
-                            <!-- <div class="card-body py-3 pt-3"> -->
-                            <!-- <h5 class="card-title">Hashtag Scrapper</h5> -->
-                            <!-- <p class="card-text text-dark"></p> -->
-                        <!-- </div> -->
-                    </a>
-                    <a class="card flip-card h-10 mx-2" target="_blank" href="http://124.109.52.235:8083">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/TelegramParser.png' %}" alt="IRC image">
-                                </div>
-                                <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Telegram Parser</h3>
-                                    <h6 class="bt-0">Scrap and analyze twitter tik tok and hashtag based data.</h6>
-                                </div>
-                            </div>
-                            <!-- <div class="card-body py-3 pt-3"> -->
-                            <!-- <h5 class="card-title">Hashtag Scrapper</h5> -->
-                            <!-- <p class="card-text text-dark"></p> -->
-                        <!-- </div> -->
-                    </a>
-                    <!-- <a class="card mx-2" target="_blank" href="http://124.109.52.235:8085">
-                        <span class="center" >
-                            <img class="card-img-top h-10 " style="height:100px;width:auto"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
-                        </span>  -->
-                        <!-- <div class="card-body py-3 pt-3"> -->
-                            <!-- <h5 class="card-title">Hashtag report</h4> -->
-                            <!-- <p class="card-text text-dark"></p> -->
-                        <!-- </div> -->
-                    <!-- </a> -->
-                    <!-- <a class="card mx-2" target="_blank" href="http://124.109.52.235:8083/">
-                        <span class="center" >
-                            <img class="card-img-top h-10 " style="height:100px;width:auto"  src="{% static 'assets/images/applications/IRC.png' %}" alt="IRC image">
-                        </span>  -->
-                        <!-- <div class="card-body py-3 pt-3"> -->
-                            <!-- <h5 class="card-title">Crawler 1.0</h5> -->
-                            <!-- <p class="card-text text-dark"></p> -->
-                        <!-- </div> -->
-                    <!-- </a> -->
-                    <a class="card  flip-card mx-2" target="_blank" href="http://124.109.52.235:5601/">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                    <img class="card-img-top h-10 d-block m-auto"  src="{% static 'assets/images/applications/elasticsearch.png' %}" alt="IRC image">
-                                </div>
-                                <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Elastic Database</h3>
-                                    <h6 class="bt-0">Scrap and save twitter, tiktok and telegram data.</h6>
+                                    <h3 class="font-weight-bold">SMOCEYE</h3>
+                                    <h6 class="bt-0"></h6>
                                 </div>
                             </div>
                         <!-- <div class="card-body py-3"> -->
-                            <!-- <h5 class="card-title">Elastic Dashboards</h5> -->
-                            <!-- <p class="card-text text-dark"></p> -->
+                            <!-- <h5 class="card-title">Followerwonk</h5> -->
+                            <!-- <p class="card-text text-dark">Search Bios, Compare users, Analyze, Track and Sort followers </p> -->
                         <!-- </div> -->
-                    </a>
-                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://kumu.io/">
+                    </a>              
+                    <a class="card flip-card h-10 mx-2" target="_blank" href="http://192.168.0.105:8020">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front px-3">
-                                    <img class="card-img-top h-10 d-block m-auto"   src="{% static 'assets/images/applications/kumu.png' %}" alt="IRC image">
+                            <div class="flip-card-front">
+                                    <img class="card-img-top h-10 d-block m-auto" style="width:65%"src="{% static 'assets/images/applications/osintwiki.png' %}" alt="OSINTWIKI  image">
                                 </div>
                                 <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Kumu.io</h3>
-                                    <h6 class="bt-0">kumu makes it easy to organise complex data into relationship maps.</h6>
+                                    <h3 class="font-weight-bold">OSINTWIKI </h3>
+                                    <h6 class="bt-0"></h6>
                                 </div>
                             </div>
-                        <!-- <div class="card-body py-3 pt-3"> -->
-                            <!-- <h5 class="card-title">Crawler 2.0</h5> -->
-                            <!-- <p class="card-text text-dark"></p> -->
+                        <!-- <div class="card-body py-3"> -->
+                            <!-- <h5 class="card-title">Epieos</h5> -->
+                            <!-- <p class="card-text text-dark">Retrieve information linked to an email address, leaving no traces. </p> -->
                         <!-- </div> -->
-                    </a>
-                </div>
-                <div class="card-deck my-2">
+                    </a>                          
                     <a class="card flip-card h-10 mx-2" target="_blank" href="https://www.twitonomy.com/">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -833,36 +783,7 @@
                             <!-- <p class="card-text text-dark">Get Twitter #analytics on any user, #insights on your mentions & RTs, download tweets, manage your lists and more... </p> -->
                         <!-- </div> -->
                     </a>
-                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://followerwonk.com/">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                    <img class="card-img-top h-10 d-block m-auto"   src="{% static 'assets/images/applications/followerwonk.png' %}" alt="followerwonk image">
-                                </div>
-                                <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Followerwonk</h3>
-                                    <h6 class="bt-0">Search Bios, Compare users, Analyze, Track and Sort followers.</h6>
-                                </div>
-                            </div>
-                        <!-- <div class="card-body py-3"> -->
-                            <!-- <h5 class="card-title">Followerwonk</h5> -->
-                            <!-- <p class="card-text text-dark">Search Bios, Compare users, Analyze, Track and Sort followers </p> -->
-                        <!-- </div> -->
-                    </a>
-                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://epieos.com">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/epieos.png' %}" alt="Epieos  image">
-                                </div>
-                                <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Epieos </h3>
-                                    <h6 class="bt-0">Retrieve information linked to an email address, leaving no traces.</h6>
-                                </div>
-                            </div>
-                        <!-- <div class="card-body py-3"> -->
-                            <!-- <h5 class="card-title">Epieos</h5> -->
-                            <!-- <p class="card-text text-dark">Retrieve information linked to an email address, leaving no traces. </p> -->
-                        <!-- </div> -->
-                    </a>
+
                     <a class="card flip-card h-10 mx-2" target="_blank" href="https://hoaxy.osome.iu.edu/">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -946,69 +867,6 @@
                             <!-- <p class="card-text text-dark">Social Media Analytics, Worldwide Trends, Social Media Search, Visualize Twitter Profile </p> -->
                         <!-- </div> -->
                     </a>
-                </div>
-                <div class="card-deck my-2">        
-                    
-                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://fotoforensics.com/">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/FotoForensics.png' %}" alt="Linkedin image">
-                                </div>
-                                <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">FotoForensics</h3>
-                                    <h6 class="bt-0">It provides tools for evaluating digital pictures.</h6>
-                                </div>
-                            </div>
-                        <!-- <div class="card-body py-3"> -->
-                            <!-- <h5 class="card-title">Linkedin</h5> -->
-                            <!-- <p class="card-text text-dark">Connect the world's professionals network with more than 830 million members in more than 200 countries and territories to make them more productive and successful.</p> -->
-                        <!-- </div> -->
-                    </a>
-                    <a class="card flip-card h-10 mx-2" target="_blank" href="https://blockedaccounts.herokuapp.com/">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/twitterAccount.png' %}" alt="Spoonbill image">
-                                </div>
-                                <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Blocked Account Checker</h3>
-                                    <h6>Checks twitter account status and displays in a tabular and csv form. </h6>
-                                </div>
-                            </div>
-                        <!-- <div class="card-body py-3"> -->
-                            <!-- <h5 class="card-title">Spoonbill</h4> -->
-                            <!-- <p class="card-text text-dark">Keep updated on your friends' and family members' bios, websites, locations, and names. </p> -->
-                        <!-- </div> -->
-                    </a>
-                    <div class="card flip-card h-10 mx-2" target="_blank" href="https://archive.org/web/">
-                        <!-- <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/waybackmachine.png' %}" alt="waybackmachine image">
-                                </div>
-                                <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
-                                    <h6>Analyze, illusterates Twitter Data</h6>
-                                </div>
-                            </div> -->
-                        <!-- <div class="card-body py-3"> -->
-                            <!-- <h5 class="card-title">waybackmachine</h5> -->
-                            <!-- <p class="card-text text-dark">Internet Archive is a non-profit library of millions of free books, movies, software, music, websites, and more. </p> -->
-                        <!-- </div> -->
-                    </div>
-                    <div class="card flip-card h-10 mx-2" target="_blank" href="https://thevisualized.com/">
-                        <!-- <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                    <img class="card-img-top h-10 d-block m-auto"    src="{% static 'assets/images/applications/thevisualized.png' %}" alt="thevisualized image">
-                                </div>
-                                <div class="flip-card-back p-3 ">
-                                    <h3 class="font-weight-bold">Twiter Timeline Analyzer</h3>
-                                    <h6>Analyze, illusterates Twitter Data</h6>
-                                </div>
-                            </div> -->
-                        <!-- <div class="card-body py-3"> -->
-                            <!-- <h5 class="card-title">thevisualized</h5> -->
-                            <!-- <p class="card-text text-dark">Social Media Analytics, Worldwide Trends, Social Media Search, Visualize Twitter Profile </p> -->
-                        <!-- </div> -->
-                    </div>
                 </div>
                 
                 <!-- *************************************************************** -->
